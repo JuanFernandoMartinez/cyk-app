@@ -77,7 +77,7 @@ class AppComponent extends React.Component {
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossOrigin="anonymous"/>
       </head>
       
-      <form className = "bg-white w-75 m-auto rounded mb-5 p-3" onSubmit = {this.handleSubmit}>
+      <form className = "bg-white w-100 m-auto rounded mb-5 p-3" onSubmit = {this.handleSubmit}>
       <h1 className = "text-center w-50 m-auto mt-5">CYK Algorithm</h1>
 
       <div className = "w-100 m-auto align-middle">
