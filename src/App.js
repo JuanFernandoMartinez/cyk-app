@@ -63,6 +63,11 @@ class AppComponent extends React.Component {
     }else{
       alert("all fields must be filled")
     }
+
+    this.setState({
+      grammar: "",
+      text: ""
+    })
   }
   render(){
     return (
@@ -77,7 +82,7 @@ class AppComponent extends React.Component {
 
       <div className = "w-100 m-auto align-middle">
         <div className="form-floating m-auto w-75">
-          <textarea className="form-control" placeholder="Leave a comment here" id="floatingTextarea2" name = "grammar" onChange = {this.handleChange}>{this.state.grammar}</textarea>
+          <textarea className="form-control" placeholder="Leave a comment here" id="floatingTextarea2" name = "grammar" onChange = {this.handleChange} value = {this.state.grammar}></textarea>
           <label for="floatingTextarea2">Write your grammar Here</label>
         </div>
         <br>
@@ -86,7 +91,7 @@ class AppComponent extends React.Component {
         </br>
         
         <div className="form-floating m-auto w-75 ">
-          <textarea className="form-control" placeholder="Leave a comment here" id="floatingTextarea2" name = "text" onChange = {this.handleChange}>{this.state.grammar}</textarea>
+          <textarea className="form-control" placeholder="Leave a comment here" id="floatingTextarea2" name = "text" onChange = {this.handleChange} value = {this.state.text}></textarea>
           <label for="floatingTextarea2">Write your String here</label>
         </div>
 
